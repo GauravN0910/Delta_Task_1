@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style
+        name="style1" >
+        <item name = "backgroundTint">#31e0b2</item>
+        <item name = "barrierMargin">3dp</item>
+
+    </style>
+
+
+</resources>

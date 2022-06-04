@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:columnCount="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="5">
+
+
+        <Button
+            android:id="@+id/ans1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#36d1aa"
+            android:onClick="txtfill"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/ans2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#36d1aa"
+            android:onClick="txtfill"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/ans3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#36d1aa"
+            android:onClick="txtfill"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/ans4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#36d1aa"
+            android:onClick="txtfill"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/ans5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#36d1aa"
+            android:onClick="txtfill"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:columnCount="1"
+        app:layout_constraintStart_toEndOf="@id/grid1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="5"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <TextView
+            android:id="@+id/op1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/op2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/op3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/op4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/op5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:columnCount="1"
+        app:layout_constraintStart_toEndOf="@id/grid2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="5"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <Button
+            android:id="@+id/ans6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#36d1aa"
+            android:onClick="txtfill"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/ans7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#36d1aa"
+            android:onClick="txtfill"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/ans8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#36d1aa"
+            android:onClick="txtfill"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/ans9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#36d1aa"
+            android:onClick="txtfill"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/ans10"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#36d1aa"
+            android:onClick="txtfill"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:columnCount="1"
+        app:layout_constraintStart_toEndOf="@id/grid3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="5"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <TextView
+            android:id="@+id/eq1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal"
+            android:text="="
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/eq2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal"
+            android:text="="
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/eq3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal"
+            android:text="="
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/eq4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal"
+            android:text="="
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/eq5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal"
+            android:text="="
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:columnCount="1"
+        app:layout_constraintStart_toEndOf="@id/grid4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="5">
+
+
+        <TextView
+            android:id="@+id/sol1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/sol2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/sol3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/sol4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/sol5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grid1">
+
+        <Button
+            android:id="@+id/opt1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#808080"
+            android:onClick="highlight"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/opt2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#808080"
+            android:onClick="highlight"
+            android:textColor="#000000"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/opt3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#808080"
+            android:onClick="highlight"
+            android:textColor="#000000"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/opt4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#808080"
+            android:onClick="highlight"
+            android:textColor="#000000"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/opt5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#808080"
+            android:onClick="highlight"
+            android:textColor="#000000"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/opt6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#808080"
+            android:onClick="highlight"
+            android:textColor="#000000"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/opt7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#808080"
+            android:onClick="highlight"
+            android:textColor="#000000"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/opt8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#808080"
+            android:onClick="highlight"
+            android:textColor="#000000"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/opt9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#808080"
+            android:onClick="highlight"
+            android:textColor="#000000"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/opt10"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#808080"
+            android:onClick="highlight"
+            android:textColor="#000000"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:backgroundTint="#0e8f68"
+        android:onClick="submit"
+        android:text="Submit"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid6"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Switch
+        android:id="@+id/modeswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="theme"
+        android:text="Dark Mode "
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageButton
+        style="@style/style1"
+        android:id="@+id/gotohome"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="gotohome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_more" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
