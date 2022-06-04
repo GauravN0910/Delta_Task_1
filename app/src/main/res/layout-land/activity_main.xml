@@ -496,10 +496,10 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@id/modeswitch"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toEndOf="@+id/grid6"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Switch
         android:id="@+id/modeswitch"
@@ -519,25 +519,28 @@
         style="@style/style1"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="108dp"
         android:onClick="gotohome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_more" />
 
-    <Button
-        android:id="@+id/clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
-        android:backgroundTint="#0e8f68"
-        android:onClick="clear"
-        android:text="Clear"
-        android:textColor="#000000"
+    <ImageButton
+        android:id="@+id/gotoscorepage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="#bf1faf"
+        android:onClick="gotosp"
+        app:layout_constraintBottom_toTopOf="@id/submit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/grid6"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@id/gotohome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047"
+        app:srcCompat="@android:drawable/ic_menu_more" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -492,24 +492,24 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/grid6"
         app:layout_constraintVertical_bias="0.234" />
+
 
     <Switch
         android:id="@+id/modeswitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="44dp"
         android:onClick="theme"
         android:text="Dark Mode "
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
     <ImageButton
         android:id="@+id/gotohome"
@@ -523,21 +523,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_more" />
 
-    <Button
-        android:id="@+id/clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:layout_marginStart="48dp"
-        android:backgroundTint="#0e8f68"
-        android:onClick="clear"
-        android:text="Clear"
-        android:textColor="#000000"
+    <ImageButton
+        android:id="@+id/gotoscorepage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="gotosp"
+        android:background="#bf1faf"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/grid6"
-        app:layout_constraintEnd_toStartOf="@id/submit"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_more" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -236,32 +236,13 @@ public class MainActivity<i> extends AppCompatActivity {
         }
 
         if (lives==0){
-            if (score>highscore){
-//                seths(submit);
+            if(score>highscore){
+                highscore=score;
             }
             lives=3;
             score=0;
             vibe.vibrate(500);
             createPuzzle();
-        }
-    }
-    public void clear(View view){
-        for (int i =0;i<grid6.getChildCount();i++){
-            Button cell6 = (Button) grid6.getChildAt(i);
-            for (int j=0;j<grid1.getChildCount();j++){
-                Button cell1=(Button)grid1.getChildAt(j);
-                if (cell1.getText()==cell6.getTag()){
-                    cell6.setText(cell1.getText());
-                    cell1.setText("");
-                }
-            }
-            for (int j=0;j<grid2.getChildCount();j++){
-                Button cell2=(Button)grid2.getChildAt(j);
-                if (cell2.getText()==cell6.getTag()){
-                    cell6.setText(cell2.getText());
-                    cell2.setText("");
-                }
-            }
         }
     }
 
@@ -309,13 +290,12 @@ public class MainActivity<i> extends AppCompatActivity {
         }
     }
     public void gotohome(View view){
-        Intent intent = new Intent(this,homepage.class);
-        startActivity(intent);
+        Intent homeintent = new Intent(this,homepage.class);
+        startActivity(homeintent);
     }
-//    public void seths(View view){
-//        SharedPreferences pref= getSharedPreferences("highscore",Context.MODE_PRIVATE);
-//        SharedPreferences.Editor editor = pref.edit();
-//        editor.putInt("highscore",highscore);
-//        editor.apply();
-//    }
+    public void gotosp(View view){
+        Intent scoreintent = new Intent(this,scorepage.class);
+        scoreintent.putExtra("key1",highscore);
+        startActivity(scoreintent);
+    }
 }
