@@ -295,7 +295,7 @@ public class MainActivity<i> extends AppCompatActivity {
     }
     public void gotosp(View view){
         Intent scoreintent = new Intent(this,scorepage.class);
-        scoreintent.putExtra("key1",highscore);
+        scoreintent.putExtra("key1",Integer.toString(highscore));
         startActivity(scoreintent);
     }
 }
