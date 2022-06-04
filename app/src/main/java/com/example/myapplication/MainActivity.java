@@ -188,6 +188,7 @@ public class MainActivity<i> extends AppCompatActivity {
         int x=0;
         DecimalFormat decimalFormat = new DecimalFormat ("0.00");
 
+
         for (int i =0;i<5;i++){
             Button cell1 = (Button)grid1.getChildAt(i);
             TextView cell2 = (TextView) grid2.getChildAt(i);
@@ -244,6 +245,26 @@ public class MainActivity<i> extends AppCompatActivity {
             createPuzzle();
         }
     }
+    public void clear(View view){
+        for (int i =0;i<grid6.getChildCount();i++){
+            Button cell6 = (Button) grid6.getChildAt(i);
+            for (int j=0;j<grid1.getChildCount();j++){
+                Button cell1=(Button)grid1.getChildAt(j);
+                if (cell1.getText()==cell6.getTag()){
+                    cell6.setText(cell1.getText());
+                    cell1.setText("");
+                }
+            }
+            for (int j=0;j<grid2.getChildCount();j++){
+                Button cell2=(Button)grid2.getChildAt(j);
+                if (cell2.getText()==cell6.getTag()){
+                    cell6.setText(cell2.getText());
+                    cell2.setText("");
+                }
+            }
+        }
+    }
+
     boolean sflag=false;
     public void settheme (View view){
         if (!sflag){

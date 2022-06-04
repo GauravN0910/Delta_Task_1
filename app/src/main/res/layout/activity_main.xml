@@ -6,14 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp">
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/grid1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         app:columnCount="1"
+        app:layout_constraintBottom_toTopOf="@id/grid6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:rowCount="5">
@@ -84,6 +89,7 @@
         app:columnCount="1"
         app:layout_constraintStart_toEndOf="@id/grid1"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/grid6"
         app:rowCount="5"
         tools:layout_editor_absoluteX="77dp"
         tools:layout_editor_absoluteY="1dp">
@@ -153,6 +159,7 @@
         app:columnCount="1"
         app:layout_constraintStart_toEndOf="@id/grid2"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/grid6"
         app:rowCount="5"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
@@ -222,6 +229,7 @@
         app:columnCount="1"
         app:layout_constraintStart_toEndOf="@id/grid3"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/grid6"
         app:rowCount="5"
         tools:layout_editor_absoluteX="77dp"
         tools:layout_editor_absoluteY="1dp">
@@ -295,6 +303,7 @@
         android:layout_height="wrap_content"
         app:columnCount="1"
         app:layout_constraintStart_toEndOf="@id/grid4"
+        app:layout_constraintBottom_toTopOf="@id/grid6"
         app:layout_constraintTop_toTopOf="parent"
         app:rowCount="5">
 
@@ -356,6 +365,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/grid1">
 
@@ -482,10 +492,10 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.784"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/grid6"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintVertical_bias="0.234" />
 
     <Switch
         android:id="@+id/modeswitch"
@@ -502,8 +512,8 @@
 
 
     <ImageButton
-        style="@style/style1"
         android:id="@+id/gotohome"
+        style="@style/style1"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
@@ -512,6 +522,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_more" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginStart="48dp"
+        android:backgroundTint="#0e8f68"
+        android:onClick="clear"
+        android:text="Clear"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid6"
+        app:layout_constraintEnd_toStartOf="@id/submit"
+        app:layout_constraintVertical_bias="0.248" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
