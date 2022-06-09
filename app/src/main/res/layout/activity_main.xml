@@ -6,19 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".MainActivity"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
-    android:layout_marginBottom="5dp"
-    android:layout_marginTop="5dp">
+    tools:context=".MainActivity">
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/grid1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="32dp"
         app:columnCount="1"
         app:layout_constraintBottom_toTopOf="@id/grid6"
+        app:layout_constraintEnd_toStartOf="@id/grid2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:rowCount="5">
@@ -26,8 +23,8 @@
 
         <Button
             android:id="@+id/ans1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#36d1aa"
             android:onClick="txtfill"
@@ -37,8 +34,8 @@
 
         <Button
             android:id="@+id/ans2"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#36d1aa"
             android:onClick="txtfill"
@@ -48,8 +45,8 @@
 
         <Button
             android:id="@+id/ans3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#36d1aa"
             android:onClick="txtfill"
@@ -59,8 +56,8 @@
 
         <Button
             android:id="@+id/ans4"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#36d1aa"
             android:onClick="txtfill"
@@ -70,8 +67,8 @@
 
         <Button
             android:id="@+id/ans5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#36d1aa"
             android:onClick="txtfill"
@@ -97,8 +94,8 @@
 
         <TextView
             android:id="@+id/op1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -108,8 +105,8 @@
 
         <TextView
             android:id="@+id/op2"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -119,8 +116,8 @@
 
         <TextView
             android:id="@+id/op3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -130,8 +127,8 @@
 
         <TextView
             android:id="@+id/op4"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -141,8 +138,8 @@
 
         <TextView
             android:id="@+id/op5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -167,8 +164,8 @@
 
         <Button
             android:id="@+id/ans6"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#36d1aa"
             android:onClick="txtfill"
@@ -178,8 +175,8 @@
 
         <Button
             android:id="@+id/ans7"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#36d1aa"
             android:onClick="txtfill"
@@ -189,8 +186,8 @@
 
         <Button
             android:id="@+id/ans8"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#36d1aa"
             android:onClick="txtfill"
@@ -200,8 +197,8 @@
 
         <Button
             android:id="@+id/ans9"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#36d1aa"
             android:onClick="txtfill"
@@ -211,8 +208,8 @@
 
         <Button
             android:id="@+id/ans10"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#36d1aa"
             android:onClick="txtfill"
@@ -237,8 +234,8 @@
 
         <TextView
             android:id="@+id/eq1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center_horizontal"
             android:text="="
@@ -249,8 +246,8 @@
 
         <TextView
             android:id="@+id/eq2"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center_horizontal"
             android:text="="
@@ -261,8 +258,8 @@
 
         <TextView
             android:id="@+id/eq3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center_horizontal"
             android:text="="
@@ -273,8 +270,8 @@
 
         <TextView
             android:id="@+id/eq4"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center_horizontal"
             android:text="="
@@ -285,8 +282,8 @@
 
         <TextView
             android:id="@+id/eq5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center_horizontal"
             android:text="="
@@ -310,8 +307,8 @@
 
         <TextView
             android:id="@+id/sol1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -320,8 +317,8 @@
 
         <TextView
             android:id="@+id/sol2"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -330,8 +327,8 @@
 
         <TextView
             android:id="@+id/sol3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -340,8 +337,8 @@
 
         <TextView
             android:id="@+id/sol4"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -350,8 +347,8 @@
 
         <TextView
             android:id="@+id/sol5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -365,14 +362,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/grid1">
 
         <Button
             android:id="@+id/opt1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#808080"
             android:onClick="highlight"
@@ -382,8 +379,8 @@
 
         <Button
             android:id="@+id/opt2"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#808080"
             android:onClick="highlight"
@@ -393,8 +390,8 @@
 
         <Button
             android:id="@+id/opt3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#808080"
             android:onClick="highlight"
@@ -404,8 +401,8 @@
 
         <Button
             android:id="@+id/opt4"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#808080"
             android:onClick="highlight"
@@ -415,8 +412,8 @@
 
         <Button
             android:id="@+id/opt5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#808080"
             android:onClick="highlight"
@@ -426,8 +423,8 @@
 
         <Button
             android:id="@+id/opt6"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#808080"
             android:onClick="highlight"
@@ -437,8 +434,8 @@
 
         <Button
             android:id="@+id/opt7"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#808080"
             android:onClick="highlight"
@@ -448,8 +445,8 @@
 
         <Button
             android:id="@+id/opt8"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#808080"
             android:onClick="highlight"
@@ -459,8 +456,8 @@
 
         <Button
             android:id="@+id/opt9"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#808080"
             android:onClick="highlight"
@@ -470,8 +467,8 @@
 
         <Button
             android:id="@+id/opt10"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="3dp"
             android:backgroundTint="#808080"
             android:onClick="highlight"
@@ -513,12 +510,12 @@
 
     <ImageButton
         android:id="@+id/gotohome"
-        style="@style/style1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="28dp"
         android:onClick="gotohome"
+        android:background="#31e0b2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_more" />

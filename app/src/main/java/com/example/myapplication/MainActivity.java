@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -39,6 +40,8 @@ public class MainActivity<i> extends AppCompatActivity {
     String selectedAnswer;
     int lives = 3, score = 0, highscore=0;
     Vibrator vibe;
+
+    SharedPreferences pref1;
     
 
     public void createPuzzle() {
@@ -102,12 +105,16 @@ public class MainActivity<i> extends AppCompatActivity {
             TextView cell3 = (TextView) grid3.getChildAt(i);
             cell3.setText("");
         }
+
     }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(getWindow().FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
 
@@ -120,6 +127,9 @@ public class MainActivity<i> extends AppCompatActivity {
         bg = (ConstraintLayout)findViewById(R.id.bg);
         vibe=(Vibrator)this.getSystemService(VIBRATOR_SERVICE);
         submit=(Button)findViewById(R.id.submit);
+
+        pref1 = getSharedPreferences("hackermode",Context.MODE_PRIVATE);
+
 
         createPuzzle();
     }
@@ -139,6 +149,12 @@ public class MainActivity<i> extends AppCompatActivity {
             for (int i = 0; i < grid3.getChildCount(); i++) {
                 Button cell3 = (Button) grid3.getChildAt(i);
                 cell3.setClickable(true);
+            }
+            for(int i=0;i<grid6.getChildCount();i++){
+                Button cell6 = (Button) grid6.getChildAt(i);
+                if (String.valueOf((cell6.getTag())) != selectedAnswer){
+                    cell6.setClickable(false);
+                }
             }
             flag=true;
         }
@@ -166,6 +182,7 @@ public class MainActivity<i> extends AppCompatActivity {
                     if (String.valueOf((cell6.getText())) == selectedAnswer) {
                         cell6.setText("");
                     }
+                    cell6.setClickable(true);
                 }
             }
             flag=false;
@@ -179,6 +196,7 @@ public class MainActivity<i> extends AppCompatActivity {
                     cell6.setText(selectedAnswer);
                     cell6.setBackgroundColor(Color.GRAY);
                 }
+                cell6.setClickable(true);
             }
             selectedAnswer = "";
         }
@@ -199,6 +217,7 @@ public class MainActivity<i> extends AppCompatActivity {
             double op2 = Double.parseDouble(String.valueOf(cell3.getText()));
             double sol = Double.parseDouble(String.valueOf(cell5.getText()));
             String op = String.valueOf(cell2.getText());
+
 
             if (op =="+"){
                 if (op1+op2 == sol){
@@ -224,13 +243,14 @@ public class MainActivity<i> extends AppCompatActivity {
             }
         }
 
-        if (x!=5){
+        if (x!=5 && lives>0){
             lives-=1;
+            score+=x*100;
             createPuzzle();
             Toast.makeText(getApplicationContext(), "You have " + String.valueOf(lives) + " lives remaining.", Toast.LENGTH_SHORT).show();
         }
         else {
-            score+=100;
+            score+=x*100;
             Toast.makeText(getApplicationContext(), "Your score is " + String.valueOf(score), Toast.LENGTH_SHORT).show();
             createPuzzle();
         }
@@ -239,6 +259,7 @@ public class MainActivity<i> extends AppCompatActivity {
             if(score>highscore){
                 highscore=score;
             }
+            Toast.makeText(getApplicationContext(), "Your score is " + String.valueOf(score), Toast.LENGTH_SHORT).show();
             lives=3;
             score=0;
             vibe.vibrate(500);
@@ -246,7 +267,7 @@ public class MainActivity<i> extends AppCompatActivity {
         }
     }
 
-    boolean sflag=false;
+    boolean sflag;
     public void settheme (View view){
         if (!sflag){
             bg.setBackgroundColor(Color.BLACK);
@@ -291,11 +312,13 @@ public class MainActivity<i> extends AppCompatActivity {
     }
     public void gotohome(View view){
         Intent homeintent = new Intent(this,homepage.class);
+        pref1.edit().putBoolean("theme",sflag).apply();
         startActivity(homeintent);
     }
     public void gotosp(View view){
         Intent scoreintent = new Intent(this,scorepage.class);
-        scoreintent.putExtra("key1",Integer.toString(highscore));
+        pref1.edit().putString("highscore",Integer.toString(highscore)).apply();
+        pref1.edit().putBoolean("theme",sflag).apply();
         startActivity(scoreintent);
     }
 }
